@@ -1,0 +1,12 @@
+{
+  "name": "Archetype-u-component-constructor",
+  "version": "0.1.0",
+  "author": "Sam Ashley",
+  "main": "_u-component-constructor.scss",
+  "ignore": [
+    ".*",
+    "CHANGELOG.md",
+    "package.json",
+    "/test"
+  ]
+}

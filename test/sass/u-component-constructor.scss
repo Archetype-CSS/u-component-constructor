@@ -1,0 +1,30 @@
+/**
+ * Test: Archetype/u-component-constructor.scss
+ *
+ */
+@import '../../_u-component-constructor.scss';
+@import '_test-component';
+
+// override default prototype skin with custom structure styles
+$test__component--structure:(
+  padding: 2em,
+  margin: 1em 0 1em 0,
+);
+
+// override default prototype skin with custom skin styles
+$test__component--skin:(
+  color: green,
+  background: lightgreen,
+  border: 1px solid darken (lightgreen, 15%),
+);
+
+// button structure
+.test__component--structure {
+  @include component--structure($test__component--structure);
+}
+
+// button skin
+.test__component--skin {
+  @include component--skin($test__component--skin);
+}
+
