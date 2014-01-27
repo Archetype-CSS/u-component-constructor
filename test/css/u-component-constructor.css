@@ -1,0 +1,59 @@
+/**
+ * Test: Archetype/u-component-constructor.scss
+ *
+ */
+/**
+ * Component Constructor
+ *
+ * Loop through a map to write style properties
+ * Used to provide a means for overriding default styles without redundant output
+ * Allows for the component to be package managed with a tool like bower
+ * without being tied to its predefined styles/settings
+ * Applys default styles for unit testing
+ *
+ * Sass (v3.3.0.rc.2)
+ * Compass (v1.0.0.alpha.17)
+ *
+ * 1. Component Constructor takes only one argument, $map
+ * 2. Loop over $map and find properties and values
+ * 3. Output 'property: value;'
+ */
+/**
+ * Test: Archetype/u-component-constructor
+ *
+ * Component styles are handled by bower, including here for testing purposes.
+ */
+/**
+ * Test Component Structure
+ *
+ * (default protype styles)
+ */
+/**
+ * Test Component  Skins
+ *
+ * (protype structure styles)
+ */
+/* line 22, ../sass/u-component-constructor.scss */
+.test__component--structure {
+  /* 1 */
+  /* 2 */
+  padding: 2em;
+  /* 3 */
+  /* 2 */
+  margin: 1em 0 1em 0;
+  /* 3 */
+}
+
+/* line 29, ../sass/u-component-constructor.scss */
+.test__component--skin {
+  /* 1 */
+  /* 2 */
+  color: green;
+  /* 3 */
+  /* 2 */
+  background: lightgreen;
+  /* 3 */
+  /* 2 */
+  border: 1px solid #4ee44e;
+  /* 3 */
+}
