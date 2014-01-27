@@ -20,11 +20,13 @@ $test__component--skin:(
 
 // button structure
 .test__component--structure {
-  @include component--structure($test__component--structure);
+  @include test__component--structure($test__component--structure);
 }
+
+
 
 // button skin
 .test__component--skin {
-  @include component--skin($test__component--skin);
+  @include test__component--skin($test__component--skin);
 }
 
