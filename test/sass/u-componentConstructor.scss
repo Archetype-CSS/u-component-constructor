@@ -2,8 +2,8 @@
  * Test: Archetype/u-component-constructor.scss
  *
  */
-@import '../../_u-component-constructor.scss';
-@import '_test-component';
+@import '../../_u-componentConstructor.scss';
+@import '_testComponent';
 
 // override default prototype skin with custom structure styles
 $test__component--structure:(
@@ -22,8 +22,6 @@ $test__component--skin:(
 .test__component--structure {
   @include test__component--structure($test__component--structure);
 }
-
-
 
 // button skin
 .test__component--skin {
