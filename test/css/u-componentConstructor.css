@@ -33,7 +33,7 @@
  *
  * (protype structure styles)
  */
-/* line 22, ../sass/u-component-constructor.scss */
+/* line 22, ../sass/u-componentConstructor.scss */
 .test__component--structure {
   /* 1 */
   /* 2 */
@@ -44,7 +44,7 @@
   /* 3 */
 }
 
-/* line 29, ../sass/u-component-constructor.scss */
+/* line 27, ../sass/u-componentConstructor.scss */
 .test__component--skin {
   /* 1 */
   /* 2 */

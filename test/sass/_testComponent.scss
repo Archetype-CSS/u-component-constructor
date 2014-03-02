@@ -4,7 +4,6 @@
  * Component styles are handled by bower, including here for testing purposes.
  */
 
-
 /**
  * Test Component Structure
  *
@@ -16,7 +15,7 @@ $test__component--structure:(
 ) !default;
 
 @mixin test__component--structure($styles) {
-  @include component-constructor($test__component--structure);
+  @include componentConstructor($test__component--structure);
 }
 
 /**
@@ -31,13 +30,13 @@ $test__component--skin:(
 ) !default;
 
 @mixin test__component--skin($styles) {
-    @include component-constructor($test__component--skin);
+    @include componentConstructor($test__component--skin);
 }
 
 
 .test__component--structure {
   @mixin component--structure($styles) {
-    @include component-constructor($styles);
+    @include componentConstructor($styles);
   }
 }
 
