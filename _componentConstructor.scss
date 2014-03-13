@@ -1,0 +1,23 @@
+/**
+ * Component Constructor
+ *
+ * Loop through a map to write style properties
+ * Used to provide a means for overriding default styles without redundant output
+ * Allows for the component to be package managed with a tool like bower
+ * without being tied to its predefined styles/settings
+ * Applys default styles for unit testing
+ *
+ * Sass v3.3.2 (Maptastic Maple)
+ * Compass (v1.0.0.alpha.19)
+ *
+ * 1. Component Constructor takes only one argument$map
+ * 2. Loop over $map and find properties and values
+ * 3. Output 'property: value;'
+ *
+ */
+@mixin component-constructor($map) {      /* 1 */
+  @each $p$v in $map {                    /* 2 */
+    #{$p}: $v;                            /* 3 */
+  }
+}
+
