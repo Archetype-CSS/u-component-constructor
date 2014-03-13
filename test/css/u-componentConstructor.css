@@ -5,18 +5,17 @@
 /**
  * Component Constructor
  *
- * Loop through a map to write style properties
  * Used to provide a means for overriding default styles without redundant output
  * Allows for the component to be package managed with a tool like bower
- * without being tied to its predefined styles/settings
- * Applys default styles for unit testing
+ * without being tied to its predefined styles/settings for unit testing
  *
- * Sass (v3.3.0.rc.2)
- * Compass (v1.0.0.alpha.17)
+ * Sass v3.3.2 (Maptastic Maple)
+ * Compass (v1.0.0.alpha.19)
  *
- * 1. Component Constructor takes only one argument, $map
+ * 1. Component Constructor takes only one argument$map
  * 2. Loop over $map and find properties and values
  * 3. Output 'property: value;'
+ *
  */
 /**
  * Test: Archetype/u-component-constructor
