@@ -1,10 +1,10 @@
-# u-component-constructor [![Build Status](https://secure.travis-ci.org/Archetype-CSS/u-component-constructor.png?branch=master)](http://travis-ci.org/Archetype-CSS/u-component-constructor) [![Built with Grunt](https://cdn.gruntjs.com/builtwith.png)](http://gruntjs.com/)
+# u-componentConstructor [![Build Status](https://secure.travis-ci.org/Archetype-CSS/u-componentConstructor.png?branch=master)](http://travis-ci.org/Archetype-CSS/u-componentConstructor) [![Built with Grunt](https://cdn.gruntjs.com/builtwith.png)](http://gruntjs.com/)
 
 Component constructor utility for overriding default component styles without redundant output.
 
 ## Installation
   * [Bower](http://bower.io): {{coming soon}}
-  * Git: `git clone https://github.com/Archetype-CSS/u-component-constructor.git`
+  * Git: `git clone https://github.com/Archetype-CSS/u-componentConstructor.git`
 
 ## Use
 The component constructor utility is a mixin 
@@ -18,8 +18,8 @@ This provides the component along with it's default prototype styles to override
 
 
 ```scss
-// import u-component-constructor within your project's main sass file
-@import 'path/to/bower_components/u-component-constructor';
+// import u-componentConstructor within your project's main sass file
+@import 'path/to/bower_components/u-componentConstructor';
 ```
 
 
@@ -49,15 +49,15 @@ $componentName--skin:(
 
 ```
 
-  * `@include component-constructor($map)` - call the component-constructor
+  * `@include componentConstructor($map)` - call the componentConstructor
     mixin and output `property: value` for each property and value pair within
     `$map`.
 
 ## Run the Test Locally
 
 ```bash
-git clone https://github.com/Archetype-CSS/u-component-constructor.git
-cd u-component-constructor
+git clone https://github.com/Archetype-CSS/u-componentConstructor.git
+cd u-componentConstructor
 npm install
 grunt
 ```
