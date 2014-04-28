@@ -18,10 +18,9 @@
   $i: 1;
   $length: length($keys);
   @while $length >= $i  {
-    $map: map-get($mapnth($keys$i));    /* 4 */
+    $map: map-get($map, nth($keys, $i));    /* 4 */
     $i: $i + 1;
   }
- 
   @each $p, $v in $map {    /* 2 */
     @if type-of($v) != map {      /* 4 */
       #{$p}: $v;    /* 3 */
