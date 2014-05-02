@@ -28,3 +28,29 @@
   }
 }
 
+/**
+ * Deep Get (from Susy2)
+ * 
+ * Return a value deep in nested maps
+ * https://github.com/ericam/susy/blob/master/sass/susy/math/su/_maps.scss
+ */
+@function _susy-deep-get(
+  $map,
+  $keys...
+) {
+  $_return: $map;
+
+  @each $key in $keys {
+    @if type-of($_return) == map {
+      $_return: map-get($_return, $key);
+    }
+  }
+
+  @return $_return;
+}
+/** 
+ * Name Spaced Wrapper for Archetype
+ */ 
+@function _u-deepGet($map, $keys...) {
+  @return _susy-deep-get($map, $keys...);
+}
