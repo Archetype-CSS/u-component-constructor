@@ -2,29 +2,48 @@
  * Test: Archetype/u-component-constructor.scss
  *
  */
-@import '../../_u-componentConstructor.scss';
+@import '../../_u-componentConstructor';
 @import '_testComponent';
 
 // override default prototype skin with custom structure styles
-$test__component--structure:(
+$test__component--structure: (
   padding: 2em,
   margin: 1em 0 1em 0,
 );
 
 // override default prototype skin with custom skin styles
-$test__component--skin:(
+$test__component--skin: (
   color: green,
   background: lightgreen,
   border: 1px solid darken(lightgreen, 15%),
+  nestedMap:(
+    background: pink
+  )
 );
 
-// button structure
+$test__component--skin3: (
+  color: green,
+  background: lightgreen,
+  border: 1px solid darken(lightgreen, 15%),
+  activeState: (
+    background: pink
+  )
+);
+
+// structure
 .test__component--structure {
   @include test__component--structure($test__component--structure);
 }
 
-// button skin
+// skin
 .test__component--skin {
   @include test__component--skin($test__component--skin);
+}
+.test__component--skin2 {
+  background: _u-deepGet($test__component--skin, nestedMap, background);
+}
+
+.test__component--skin3 {
+  @include test__component--skin($test__component--skin3);
 }
 
