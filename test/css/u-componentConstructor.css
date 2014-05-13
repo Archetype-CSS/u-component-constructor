@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 /*
 Syntax error: File to import not found or unreadable: ../../_u-componentConstructor.scss.
               Load paths:
@@ -68,3 +69,102 @@ body:before {
   white-space: pre;
   font-family: monospace;
   content: "Syntax error: File to import not found or unreadable: ../../_u-componentConstructor.scss.\A               Load paths:\A                 /Users/sashley/Sites/Open-Source/Archetype/u-componentConstructor/test/sass\A                 /Users/sashley/.rvm/gems/ruby-1.9.3-p448@global/gems/compass-core-1.0.0.alpha.19/stylesheets\A                 /Users/sashley/.rvm/gems/ruby-1.9.3-p448/gems/susy-2.1.1/sass\A                 Compass::SpriteImporter\A         on line 5 of /Users/sashley/Sites/Open-Source/Archetype/u-componentConstructor/test/sass/u-componentConstructor.scss\A \A 1: /Users/sashley/Sites/Open-Source/Archetype/u-componentConstructor/test/sass/u-componentConstructor.scss"; }
+=======
+/**
+ * Test: Archetype/u-component-constructor.scss
+ *
+ */
+/**
+ * Component Constructor
+ *
+ * Used to provide a means for overriding default styles without redundant output
+ * Allows for the component to be package managed with a tool like bower
+ * without being tied to its predefined styles/settings for unit testing
+ *
+ * Sass v3.3.2 (Maptastic Maple)
+ * Compass (v1.0.0.alpha.19)
+ *
+ * 1. Component Constructor takes arguments, $map, and $key(s)
+ * 2. Loop over $map and find properties and values
+ * 3. Output 'property: value;'
+ * 4. Account for nested maps
+ *
+ */
+/**
+ * Deep Get (from Susy2)
+ * 
+ * Return a value deep in nested maps
+ * https://github.com/ericam/susy/blob/master/sass/susy/math/su/_maps.scss
+ */
+/** 
+ * Name Spaced Wrapper for Archetype
+ */
+/**
+ * Test: Archetype/u-component-constructor
+ *
+ * Component styles are handled by bower, including here for testing purposes.
+ */
+/**
+ * Test Component Structure
+ *
+ * (default protype styles)
+ */
+/**
+ * Test Component  Skins
+ *
+ * (protype structure styles)
+ */
+/* line 34, ../sass/u-componentConstructor.scss */
+.test__component--structure {
+  /* 1 */
+  /* 2 */
+  /* 4 */
+  padding: 2em;
+  /* 3 */
+  /* 2 */
+  /* 4 */
+  margin: 1em 0 1em 0;
+  /* 3 */
+}
+
+/* line 39, ../sass/u-componentConstructor.scss */
+.test__component--skin {
+  /* 1 */
+  /* 2 */
+  /* 4 */
+  color: green;
+  /* 3 */
+  /* 2 */
+  /* 4 */
+  background: lightgreen;
+  /* 3 */
+  /* 2 */
+  /* 4 */
+  border: 1px solid #4ee44e;
+  /* 3 */
+  /* 2 */
+}
+
+/* line 42, ../sass/u-componentConstructor.scss */
+.test__component--skin2 {
+  background: pink;
+}
+
+/* line 46, ../sass/u-componentConstructor.scss */
+.test__component--skin3 {
+  /* 1 */
+  /* 2 */
+  /* 4 */
+  color: green;
+  /* 3 */
+  /* 2 */
+  /* 4 */
+  background: lightgreen;
+  /* 3 */
+  /* 2 */
+  /* 4 */
+  border: 1px solid #4ee44e;
+  /* 3 */
+  /* 2 */
+}
+>>>>>>> 75aa52a1229462f1c2fa7aa8674acacc79605ed2

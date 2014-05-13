@@ -1,0 +1,56 @@
+/**
+ * Component Constructor
+ *
+ * Used to provide a means for overriding default styles without redundant output
+ * Allows for the component to be package managed with a tool like bower
+ * without being tied to its predefined styles/settings for unit testing
+ *
+ * Sass v3.3.2 (Maptastic Maple)
+ * Compass (v1.0.0.alpha.19)
+ *
+ * 1. Component Constructor takes arguments, $map, and $key(s)
+ * 2. Loop over $map and find properties and values
+ * 3. Output 'property: value;'
+ * 4. Account for nested maps
+ *
+ */
+@mixin componentConstructor($map, $keys...){    /* 1 */
+  $i: 1;
+  $length: length($keys);
+  @while $length >= $i  {
+    $map: map-get($map, nth($keys, $i));    /* 4 */
+    $i: $i + 1;
+  }
+  @each $p, $v in $map {    /* 2 */
+    @if type-of($v) != map {      /* 4 */
+      #{$p}: $v;    /* 3 */
+    }
+  }
+}
+
+/**
+ * Deep Get (from Susy2)
+ * 
+ * Return a value deep in nested maps
+ * https://github.com/ericam/susy/blob/master/sass/susy/math/su/_maps.scss
+ */
+@function _susy-deep-get(
+  $map,
+  $keys...
+) {
+  $_return: $map;
+
+  @each $key in $keys {
+    @if type-of($_return) == map {
+      $_return: map-get($_return, $key);
+    }
+  }
+
+  @return $_return;
+}
+/** 
+ * Name Spaced Wrapper for Archetype
+ */ 
+@function _u-deepGet($map, $keys...) {
+  @return _susy-deep-get($map, $keys...);
+}
