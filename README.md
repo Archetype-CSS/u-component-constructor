@@ -6,6 +6,8 @@ Component constructor utility for overriding default component styles without re
   * [Bower](http://bower.io): `bower install Archetype-u-componentConstructor`
   * Git: `git clone https://github.com/Archetype-CSS/Archetype-u-componentConstructor.git`
 
+Then, import the partial in your main project Sass file `@import 'Archetype-u-componentConstructor';`
+
 ## Use
 There are two flavors of the component constructor utility. The first is a mixin that iterates over a map returning property value pairs. The second is a function that simply retreives a specific value given a key.
 
