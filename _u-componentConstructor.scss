@@ -51,6 +51,6 @@
 /** 
  * Name Spaced Wrapper for Archetype
  */ 
-@function _u-deepGet($map, $keys...) {
+@function u-deepGet($map, $keys...) {
   @return _susy-deep-get($map, $keys...);
 }
