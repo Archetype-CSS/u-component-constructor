@@ -40,7 +40,7 @@ $test__component--skin3: (
   @include test__component--skin($test__component--skin);
 }
 .test__component--skin2 {
-  background: _u-deepGet($test__component--skin, nestedMap, background);
+  background: u-deepGet($test__component--skin, nestedMap, background);
 }
 
 .test__component--skin3 {

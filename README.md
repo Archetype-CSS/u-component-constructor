@@ -1,13 +1,13 @@
-# u-componentConstructor [![Build Status](https://secure.travis-ci.org/Archetype-CSS/u-componentConstructor.png?branch=master)](http://travis-ci.org/Archetype-CSS/u-componentConstructor) [![Built with Grunt](https://cdn.gruntjs.com/builtwith.png)](http://gruntjs.com/)
+# u-componentConstructor [![Build Status](https://secure.travis-ci.org/Archetype-CSS/Archetype-u-componentConstructor.png?branch=master)](http://travis-ci.org/Archetype-CSS/Archetype-u-componentConstructor) [![Built with Grunt](https://cdn.gruntjs.com/builtwith.png)](http://gruntjs.com/)
 
 Component constructor utility for overriding default component styles without redundant output.
 
 ## Installation
-  * [Bower](http://bower.io): {{coming soon}}
-  * Git: `git clone https://github.com/Archetype-CSS/u-componentConstructor.git`
+  * [Bower](http://bower.io): `bower install Archetype-u-componentConstructor`
+  * Git: `git clone https://github.com/Archetype-CSS/Archetype-u-componentConstructor.git`
 
 ## Use
-The component constructor utility is a mixin 
+There are two flavors of the component constructor utility. The first is a mixin that iterates over a map returning property value pairs. The second is a function that simply retreives a specific value given a key.
 
 Example:
  ```scss
@@ -42,22 +42,18 @@ $componentName--skin:(
   @include component--structure($componentName--structure);
 }
 
-// button skin
-.test__component--skin {
+// componentName skin
+.componentName--skin {
   @include component--skin($componentName--skin);
 }
 
 ```
 
-  * `@include componentConstructor($map)` - call the componentConstructor
-    mixin and output `property: value` for each property and value pair within
-    `$map`.
-
 ## Run the Test Locally
 
 ```bash
-git clone https://github.com/Archetype-CSS/u-componentConstructor.git
-cd u-componentConstructor
+git clone https://github.com/Archetype-CSS/Archetype-u-componentConstructor.git
+cd Archetype-u-componentConstructor
 npm install
 grunt
 ```
