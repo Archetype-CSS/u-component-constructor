@@ -1,8 +1,8 @@
 {
-  "name": "Archetype-u-component-constructor",
-  "version": "0.1.0",
+  "name": "Archetype-u-componentConstructor",
+  "version": "0.8.0",
   "author": "Sam Ashley",
-  "main": "_u-component-constructor.scss",
+  "main": "_u-componentConstructor.scss",
   "ignore": [
     ".*",
     "CHANGELOG.md",
