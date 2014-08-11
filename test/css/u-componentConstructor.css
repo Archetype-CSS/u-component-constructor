@@ -42,7 +42,7 @@
  *
  * (protype structure styles)
  */
-/* line 34, ../sass/u-componentConstructor.scss */
+/* line 36, ../sass/u-componentConstructor.scss */
 .test__component--structure {
   /* 1 */
   /* 2 */
@@ -55,7 +55,7 @@
   /* 3 */
 }
 
-/* line 39, ../sass/u-componentConstructor.scss */
+/* line 41, ../sass/u-componentConstructor.scss */
 .test__component--skin {
   /* 1 */
   /* 2 */
@@ -73,12 +73,14 @@
   /* 2 */
 }
 
-/* line 42, ../sass/u-componentConstructor.scss */
+/* line 44, ../sass/u-componentConstructor.scss */
 .test__component--skin2 {
-  background: pink;
+  background: lightgreen;
+  color: green;
+  border: 1px solid #4ee44e;
 }
 
-/* line 46, ../sass/u-componentConstructor.scss */
+/* line 50, ../sass/u-componentConstructor.scss */
 .test__component--skin3 {
   /* 1 */
   /* 2 */
