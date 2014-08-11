@@ -17,7 +17,9 @@ $test__component--skin: (
   background: lightgreen,
   border: 1px solid darken(lightgreen, 15%),
   nestedMap:(
-    background: pink
+    background: lightgreen,
+    border: 1px solid darken(lightgreen, 15%),
+    color: green
   )
 );
 
@@ -41,6 +43,8 @@ $test__component--skin3: (
 }
 .test__component--skin2 {
   background: u-deepGet($test__component--skin, nestedMap, background);
+  color: u-deepGet($test__component--skin, nestedMap, color);
+  border: u-deepGet($test__component--skin, nestedMap, border);
 }
 
 .test__component--skin3 {
