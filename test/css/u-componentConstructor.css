@@ -5,18 +5,27 @@
 /**
  * Component Constructor
  *
- * Loop through a map to write style properties
  * Used to provide a means for overriding default styles without redundant output
  * Allows for the component to be package managed with a tool like bower
- * without being tied to its predefined styles/settings
- * Applys default styles for unit testing
+ * without being tied to its predefined styles/settings for unit testing
  *
- * Sass (v3.3.0.rc.2)
- * Compass (v1.0.0.alpha.17)
+ * Sass v3.3.2 (Maptastic Maple)
+ * Compass (v1.0.0.alpha.19)
  *
- * 1. Component Constructor takes only one argument, $map
+ * 1. Component Constructor takes arguments, $map, and $key(s)
  * 2. Loop over $map and find properties and values
  * 3. Output 'property: value;'
+ * 4. Account for nested maps
+ *
+ */
+/**
+ * Deep Get (from Susy2)
+ * 
+ * Return a value deep in nested maps
+ * https://github.com/ericam/susy/blob/master/sass/susy/math/su/_maps.scss
+ */
+/** 
+ * Name Spaced Wrapper for Archetype
  */
 /**
  * Test: Archetype/u-component-constructor
@@ -33,27 +42,58 @@
  *
  * (protype structure styles)
  */
-/* line 22, ../sass/u-componentConstructor.scss */
+/* line 36, ../sass/u-componentConstructor.scss */
 .test__component--structure {
   /* 1 */
   /* 2 */
+  /* 4 */
   padding: 2em;
   /* 3 */
   /* 2 */
+  /* 4 */
   margin: 1em 0 1em 0;
   /* 3 */
 }
 
-/* line 27, ../sass/u-componentConstructor.scss */
+/* line 41, ../sass/u-componentConstructor.scss */
 .test__component--skin {
   /* 1 */
   /* 2 */
+  /* 4 */
   color: green;
   /* 3 */
   /* 2 */
+  /* 4 */
   background: lightgreen;
   /* 3 */
   /* 2 */
+  /* 4 */
   border: 1px solid #4ee44e;
   /* 3 */
+  /* 2 */
+}
+
+/* line 44, ../sass/u-componentConstructor.scss */
+.test__component--skin2 {
+  background: lightgreen;
+  color: green;
+  border: 1px solid #4ee44e;
+}
+
+/* line 50, ../sass/u-componentConstructor.scss */
+.test__component--skin3 {
+  /* 1 */
+  /* 2 */
+  /* 4 */
+  color: green;
+  /* 3 */
+  /* 2 */
+  /* 4 */
+  background: lightgreen;
+  /* 3 */
+  /* 2 */
+  /* 4 */
+  border: 1px solid #4ee44e;
+  /* 3 */
+  /* 2 */
 }
